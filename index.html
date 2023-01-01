@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Node Foco</title>
+    <title>Calculadora</title>
+    <link href="css/style.css" />
   </head>
   <body>
-    <h1>Node Foco</h1>
+    <input type="number" id="inputExemplo" value="0" class="inputDisplay" />
+    <table>
+      <tr>
+        <td>
+          <button onclick="alert('7')">7</button>
+        </td>
+        <td>
+          <button onclick="alert('8')">8</button>
+        </td>
+        <td>
+          <button onclick="alert('9')">9</button>
+        </td>
+        <td>
+          <button onclick="alert('clear')">C</button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function btnClick() {
+        const input = document.querySelector('#inputExemplo')
+      }
+    </script>
   </body>
 </html>
