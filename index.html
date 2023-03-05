@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculadora</title>
-    <link href="css/style.css" />
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <input type="number" id="inputExemplo" value="0" class="inputDisplay" />
+    <h3>Exemplos JS</h3>
+    <input
+      type="number"
+      id="inputExemplo"
+      value="0"
+      class="inputDisplay"
+      disabled="true"
+    />
+
     <table>
       <tr>
         <td>
@@ -18,14 +26,62 @@
           <button onclick="alert('9')">9</button>
         </td>
         <td>
-          <button onclick="alert('clear')">C</button>
+          <button onclick="alert('clear')">CE</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button onclick="alert('4')">4</button>
+        </td>
+        <td>
+          <button onclick="alert('5')">5</button>
+        </td>
+        <td>
+          <button onclick="alert('6')">6</button>
+        </td>
+        <td>
+          <button onclick="alert('/')">/</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button onclick="alert('1')">1</button>
+        </td>
+        <td>
+          <button onclick="alert('2')">2</button>
+        </td>
+        <td>
+          <button onclick="alert('3')">3</button>
+        </td>
+        <td>
+          <button onclick="alert('x')">x</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button onclick="alert('0')">0</button>
+        </td>
+        <td>
+          <button onclick="alert('=')">=</button>
+        </td>
+        <td>
+          <button onclick="alert('+')">+</button>
+        </td>
+        <td>
+          <button onclick="alert('-')">-</button>
+          <button onclick="alert(',')">,</button>
         </td>
       </tr>
     </table>
 
     <script>
       function btnClick() {
-        const input = document.querySelector('#inputExemplo')
+        const input = document.querySelector('#inputExemplo');
+        // input.value = 'Live do Marcelino!';
+        alert(input.value);
       }
     </script>
   </body>
