@@ -1,7 +1,11 @@
 .inputDisplay {
-  width: 115px;
+  width: 103px;
 }
 
 h3 {
   color: #e70633;
+}
+
+.btn {
+  width: 24px;
 }

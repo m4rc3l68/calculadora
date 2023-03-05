@@ -8,7 +8,7 @@
     <h3>Exemplos JS</h3>
     <input
       type="number"
-      id="inputExemplo"
+      id="inputDisplay"
       value="0"
       class="inputDisplay"
       disabled="true"
@@ -17,71 +17,70 @@
     <table>
       <tr>
         <td>
-          <button onclick="alert('7')">7</button>
+          <button class="btn" onclick="atualizaDisplay('7')">7</button>
         </td>
         <td>
-          <button onclick="alert('8')">8</button>
+          <button class="btn" onclick="atualizaDisplay('8')">8</button>
         </td>
         <td>
-          <button onclick="alert('9')">9</button>
+          <button class="btn" onclick="atualizaDisplay('9')">9</button>
         </td>
         <td>
-          <button onclick="alert('clear')">CE</button>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <button onclick="alert('4')">4</button>
-        </td>
-        <td>
-          <button onclick="alert('5')">5</button>
-        </td>
-        <td>
-          <button onclick="alert('6')">6</button>
-        </td>
-        <td>
-          <button onclick="alert('soma')">+</button>
+          <button class="btn" onclick="alert('clear')">C</button>
         </td>
       </tr>
 
       <tr>
         <td>
-          <button onclick="alert('1')">1</button>
+          <button class="btn" onclick="atualizaDisplay('4')">4</button>
         </td>
         <td>
-          <button onclick="alert('2')">2</button>
+          <button class="btn" onclick="atualizaDisplay('5')">5</button>
         </td>
         <td>
-          <button onclick="alert('3')">3</button>
+          <button class="btn" onclick="atualizaDisplay('6')">6</button>
         </td>
         <td>
-          <button onclick="alert('subtração')">-</button>
+          <button class="btn" onclick="alert('soma')">+</button>
         </td>
       </tr>
 
       <tr>
         <td>
-          <button onclick="alert('iqual')">=</button>
+          <button class="btn" onclick="atualizaDisplay('1')">1</button>
         </td>
         <td>
-          <button onclick="alert('0')">0</button>
+          <button class="btn" onclick="atualizaDisplay('2')">2</button>
         </td>
         <td>
-          <button onclick="alert('mult')">x</button>
+          <button class="btn" onclick="atualizaDisplay('3')">3</button>
         </td>
         <td>
-          <button onclick="alert('div')">/</button>
+          <button class="btn" onclick="alert('subtração')">-</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <button class="btn" onclick="alert('iqual')">=</button>
+        </td>
+        <td>
+          <button class="btn" onclick="atualizaDisplay('0')">0</button>
+        </td>
+        <td>
+          <button class="btn" onclick="alert('mult')">x</button>
+        </td>
+        <td>
+          <button class="btn" onclick="alert('div')">/</button>
         </td>
         <td></td>
       </tr>
     </table>
 
     <script>
-      function btnClick() {
-        const input = document.querySelector('#inputExemplo');
-        // input.value = 'Live do Marcelino!';
-        alert(input.value);
+      function atualizaDisplay(numero) {
+        const input = document.querySelector('#inputDisplay');
+        input.value = input.value + numero;
       }
     </script>
   </body>
