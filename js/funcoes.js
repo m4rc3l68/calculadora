@@ -1,5 +1,5 @@
 const input = document.querySelector('#inputDisplay');
-let operacao = '';
+let operador = '';
 let numero1 = 0;
 
 function limpar() {
@@ -7,7 +7,7 @@ function limpar() {
 }
 
 function atualizaOperacao(op) {
-  operacao = op;
+  operador = op;
   numero1 = parseInt(input.value);
   input.value = '0';
 }
@@ -16,7 +16,7 @@ function resolver() {
   let numero2 = parseInt(input.value);
   let numero3 = 0;
 
-  switch (operacao) {
+  switch (operador) {
     case '+':
       numero3 = numero1 + numero2;
       break;
