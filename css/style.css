@@ -6,6 +6,21 @@ h3 {
   color: #e70633;
 }
 
+.inputDisplay {
+  width: 117px;
+  background-color: #583f03;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
 .btn {
   width: 24px;
+}
+
+.tabela {
+  padding: 5px;
+  padding-right: 2Px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #ad7b05;
 }

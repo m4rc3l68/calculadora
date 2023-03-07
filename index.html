@@ -10,7 +10,7 @@
   <h3>Exemplos JS</h3>
   <input type="number" id="inputDisplay" value="0" class="inputDisplay" disabled="true" />
 
-  <table>
+  <table class="tabela">
     <tr>
       <td>
         <button class="btn" onclick="atualizaDisplay('7')">7</button>
@@ -22,7 +22,7 @@
         <button class="btn" onclick="atualizaDisplay('9')">9</button>
       </td>
       <td>
-        <button class="btn" onclick="limpar('clear')">C</button>
+        <button class="btn" onclick="limpar()">C</button>
       </td>
     </tr>
 
@@ -37,7 +37,7 @@
         <button class="btn" onclick="atualizaDisplay('6')">6</button>
       </td>
       <td>
-        <button class="btn" onclick="atualizaOperacao('soma')">+</button>
+        <button class="btn" onclick="atualizaOperacao('+')">+</button>
       </td>
     </tr>
 
@@ -52,7 +52,7 @@
         <button class="btn" onclick="atualizaDisplay('3')">3</button>
       </td>
       <td>
-        <button class="btn" onclick="atualizaOperacao('subtração')">-</button>
+        <button class="btn" onclick="atualizaOperacao('-')">-</button>
       </td>
     </tr>
 
@@ -64,10 +64,10 @@
         <button class="btn" onclick="atualizaDisplay('0')">0</button>
       </td>
       <td>
-        <button class="btn" onclick="atualizaOperacao('mult')">x</button>
+        <button class="btn" onclick="atualizaOperacao('*')">x</button>
       </td>
       <td>
-        <button class="btn" onclick="atualizaOperacao('div')">/</button>
+        <button class="btn" onclick="atualizaOperacao('/')">/</button>
       </td>
       <td></td>
     </tr>
