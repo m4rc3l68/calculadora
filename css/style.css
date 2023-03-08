@@ -1,16 +1,16 @@
-.inputDisplay {
-  width: 103px;
-}
-
 h3 {
   color: #e70633;
+  display: flex;
+  justify-content: center;
 }
 
 .inputDisplay {
-  width: 117px;
+  width: 110px;
   background-color: #583f03;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn {
@@ -18,8 +18,10 @@ h3 {
 }
 
 .tabela {
-  padding: 5px;
-  padding-right: 2Px;
+  width: 117px;
+  display: block;
+  margin: 0 auto;
+  padding: 2px;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   background-color: #ad7b05;
